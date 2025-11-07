@@ -1,0 +1,15 @@
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\bin\Debug\net8.0\CompanyStat.exe
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\bin\Debug\net8.0\CompanyStat.deps.json
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\bin\Debug\net8.0\CompanyStat.runtimeconfig.json
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\bin\Debug\net8.0\CompanyStat.dll
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\bin\Debug\net8.0\CompanyStat.pdb
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\CompanyStat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\CompanyStat.AssemblyInfoInputs.cache
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\CompanyStat.AssemblyInfo.cs
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\CompanyStat.csproj.CoreCompileInputs.cache
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\CompanyStat.dll
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\refint\CompanyStat.dll
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\CompanyStat.pdb
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\CompanyStat.genruntimeconfig.cache
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\obj\Debug\net8.0\ref\CompanyStat.dll
+C:\Users\s0620\Desktop\NKUST-114-1-HW1\CompanyStat\CompanyStat\bin\Debug\net8.0\App_Data\company.json
