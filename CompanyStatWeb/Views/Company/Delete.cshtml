@@ -1,0 +1,39 @@
+@model CompanyStatWeb.Models.CompanyStats
+
+@{
+    ViewData["Title"] = "刪除資料";
+}
+
+<h1>刪除資料</h1>
+
+<h3>確定要刪除這筆資料嗎?</h3>
+<div>
+    <h4>公司統計 - @Model.Month</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Month)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Month)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PublicCompanyCount)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PublicCompanyCount)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OtcCompanyCount)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OtcCompanyCount)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Month" />
+        <input type="submit" value="確認刪除" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+    </form>
+</div>
