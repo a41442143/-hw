@@ -1,14 +1,18 @@
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using CompanyStatWeb.Data;
 using CompanyStatWeb.Models;
 
+=======
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<CompanyStatWeb.Services.CompanyDataService>();
 
+<<<<<<< HEAD
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -30,6 +34,8 @@ builder.Services.AddAuthorization(options =>
         .Build();
 });
 
+=======
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -40,6 +46,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+<<<<<<< HEAD
 app.UseStaticFiles();
 app.UseRouting();
 
@@ -47,12 +54,21 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets().AllowAnonymous();
+=======
+app.UseHttpsRedirection();
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapStaticAssets();
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+<<<<<<< HEAD
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -66,5 +82,7 @@ using (var scope = app.Services.CreateScope())
         logger.LogError(ex, "An error occurred while seeding the database.");
     }
 }
+=======
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 
 app.Run();

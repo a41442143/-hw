@@ -23,6 +23,10 @@ C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\rj
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\scopedcss\bundle\CompanyStatWeb.styles.css
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\scopedcss\projectbundle\CompanyStatWeb.bundle.scp.css
+<<<<<<< HEAD
+=======
+C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\compressed\h31sjphrxp-b9sayid5wm.gz
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\compressed\oz8pu8driy-61n19gt1b8.gz
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\compressed\qhlxt9ds4p-xtxxf3hu2r.gz
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\compressed\biu9eu1oon-bqjiyaj88i.gz
@@ -95,6 +99,7 @@ C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\re
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\CompanyStatWeb.pdb
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\CompanyStatWeb.genruntimeconfig.cache
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\ref\CompanyStatWeb.dll
+<<<<<<< HEAD
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\bin\Debug\net9.0\Humanizer.dll
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -211,3 +216,5 @@ C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\bin\Debug\net9.0\ru
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\CompanyStatWeb.csproj.AssemblyReference.cache
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\CompanyS.662D322F.Up2Date
 C:\Users\Computer\Documents\軟工_hw\end\-hw\CompanyStatWeb\obj\Debug\net9.0\compressed\h31sjphrxp-mj5lob749c.gz
+=======
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842

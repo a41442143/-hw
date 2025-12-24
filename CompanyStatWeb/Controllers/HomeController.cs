@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using Microsoft.AspNetCore.Mvc;
 using CompanyStatWeb.Models;
 using CompanyStatWeb.Services;
@@ -46,5 +47,36 @@ namespace CompanyStatWeb.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+=======
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using CompanyStatWeb.Models;
+
+namespace CompanyStatWeb.Controllers;
+
+public class HomeController : Controller
+{
+    private readonly ILogger<HomeController> _logger;
+
+    public HomeController(ILogger<HomeController> logger)
+    {
+        _logger = logger;
+    }
+
+    public IActionResult Index()
+    {
+        return View();
+    }
+
+    public IActionResult Privacy()
+    {
+        return View();
+    }
+
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult Error()
+    {
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
     }
 }

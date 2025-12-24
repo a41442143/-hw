@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
@@ -15,4 +16,6 @@
     </PackageReference>
   </ItemGroup>
 
+=======
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 </Project>

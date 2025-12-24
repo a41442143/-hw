@@ -7,6 +7,7 @@
   "targets": {
     ".NETCoreApp,Version=v9.0": {
       "CompanyStatWeb/1.0.0": {
+<<<<<<< HEAD
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.0",
@@ -743,6 +744,12 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "System.Text.Json/9.0.0": {},
       "System.Threading.Channels/7.0.0": {}
+=======
+        "runtime": {
+          "CompanyStatWeb.dll": {}
+        }
+      }
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
     }
   },
   "libraries": {
@@ -750,6 +757,7 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+<<<<<<< HEAD
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1121,6 +1129,8 @@
       "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
       "path": "system.threading.channels/7.0.0",
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
+=======
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
     }
   }
 }

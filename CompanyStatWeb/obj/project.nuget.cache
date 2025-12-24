@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "AuZF0kdOQ4U=",
   "success": true,
   "projectFilePath": "C:\\Users\\Computer\\Documents\\軟工_hw\\end\\-hw\\CompanyStatWeb\\CompanyStatWeb.csproj",
@@ -58,5 +59,11 @@
     "C:\\Users\\Computer\\.nuget\\packages\\system.text.json\\9.0.0\\system.text.json.9.0.0.nupkg.sha512",
     "C:\\Users\\Computer\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "XWXVLFiEh5A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Computer\\Documents\\軟工_hw\\end\\-hw\\CompanyStatWeb\\CompanyStatWeb.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
   "logs": []
 }
