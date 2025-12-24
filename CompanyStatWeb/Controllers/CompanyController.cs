@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using CompanyStatWeb.Models;
 using CompanyStatWeb.Services;
 
 namespace CompanyStatWeb.Controllers
 {
+    [Authorize]
     public class CompanyController : Controller
     {
         private readonly CompanyDataService _service;
@@ -59,6 +61,7 @@ namespace CompanyStatWeb.Controllers
             return View(data.ToList());
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -66,6 +69,7 @@ namespace CompanyStatWeb.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create(CompanyStats company)
         {
             if (ModelState.IsValid)
@@ -83,6 +87,7 @@ namespace CompanyStatWeb.Controllers
             return View(company);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(string id)
         {
             if (id == null)
@@ -100,6 +105,7 @@ namespace CompanyStatWeb.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(string id, CompanyStats company)
         {
             if (id != company.Month)
@@ -115,6 +121,7 @@ namespace CompanyStatWeb.Controllers
             return View(company);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(string id)
         {
             if (id == null)
@@ -133,6 +140,7 @@ namespace CompanyStatWeb.Controllers
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteConfirmed(string id)
         {
             _service.Delete(id);
