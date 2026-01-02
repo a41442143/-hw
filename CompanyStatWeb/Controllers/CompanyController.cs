@@ -1,17 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-<<<<<<< HEAD
 using Microsoft.AspNetCore.Authorization;
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 using CompanyStatWeb.Models;
 using CompanyStatWeb.Services;
 
 namespace CompanyStatWeb.Controllers
 {
-<<<<<<< HEAD
     [Authorize]
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
     public class CompanyController : Controller
     {
         private readonly CompanyDataService _service;
@@ -67,10 +61,7 @@ namespace CompanyStatWeb.Controllers
             return View(data.ToList());
         }
 
-<<<<<<< HEAD
         [Authorize(Roles = "Admin")]
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
         public IActionResult Create()
         {
             return View();
@@ -78,10 +69,7 @@ namespace CompanyStatWeb.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-<<<<<<< HEAD
         [Authorize(Roles = "Admin")]
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
         public IActionResult Create(CompanyStats company)
         {
             if (ModelState.IsValid)
@@ -99,10 +87,7 @@ namespace CompanyStatWeb.Controllers
             return View(company);
         }
 
-<<<<<<< HEAD
         [Authorize(Roles = "Admin")]
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
         public IActionResult Edit(string id)
         {
             if (id == null)
@@ -120,10 +105,7 @@ namespace CompanyStatWeb.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-<<<<<<< HEAD
         [Authorize(Roles = "Admin")]
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
         public IActionResult Edit(string id, CompanyStats company)
         {
             if (id != company.Month)
@@ -139,10 +121,7 @@ namespace CompanyStatWeb.Controllers
             return View(company);
         }
 
-<<<<<<< HEAD
         [Authorize(Roles = "Admin")]
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
         public IActionResult Delete(string id)
         {
             if (id == null)
@@ -161,10 +140,7 @@ namespace CompanyStatWeb.Controllers
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-<<<<<<< HEAD
         [Authorize(Roles = "Admin")]
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
         public IActionResult DeleteConfirmed(string id)
         {
             _service.Delete(id);

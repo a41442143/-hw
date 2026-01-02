@@ -1,7 +1,6 @@
 @model IEnumerable<CompanyStatWeb.Models.CompanyStats>
 
 @{
-<<<<<<< HEAD
     ViewData["Title"] = "Company Data";
 }
 
@@ -106,86 +105,3 @@
         </div>
     </div>
 </div>
-=======
-    ViewData["Title"] = "公司統計資料";
-}
-
-<h1>公司統計資料</h1>
-
-<form asp-action="Index" method="get" class="mb-3">
-    <div class="input-group">
-        <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="搜尋月別 (例如: 2024-12)" />
-        <button type="submit" class="btn btn-outline-primary">搜尋</button>
-        <a asp-action="Index" class="btn btn-outline-secondary">清除</a>
-    </div>
-</form>
-
-<div class="d-flex justify-content-between mb-3 align-items-center">
-    <div>
-        <a asp-action="Create" class="btn btn-primary">新增資料</a>
-    </div>
-    <div class="btn-group" role="group" aria-label="Sorting">
-        <span class="input-group-text bg-white border-0 fw-bold">排序：</span>
-        <a asp-action="Index" asp-route-sortOrder="@ViewData["MonthSortParm"]" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-secondary">
-            月別 @(ViewData["MonthSortParm"]?.ToString() == "month_desc" ? "↓" : "↑")
-        </a>
-        <a asp-action="Index" asp-route-sortOrder="@ViewData["CountSortParm"]" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-secondary">
-            家數 @(ViewData["CountSortParm"]?.ToString() == "count_desc" ? "↓" : "↑")
-        </a>
-        <a asp-action="Index" asp-route-sortOrder="@ViewData["CapitalSortParm"]" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-secondary">
-            資本額 @(ViewData["CapitalSortParm"]?.ToString() == "capital_desc" ? "↓" : "↑")
-        </a>
-        <a asp-action="Index" asp-route-sortOrder="@ViewData["MarketValueSortParm"]" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-secondary">
-            市值 @(ViewData["MarketValueSortParm"]?.ToString() == "marketValue_desc" ? "↓" : "↑")
-        </a>
-    </div>
-</div>
-
-<div class="table-responsive">
-    <table class="table table-striped table-bordered">
-        <thead>
-            <tr>
-                <th>@Html.DisplayNameFor(model => model.Month)</th>
-                <th>@Html.DisplayNameFor(model => model.PublicCompanyCount)</th>
-                <th>@Html.DisplayNameFor(model => model.PublicCompanyCapital)</th>
-                <th>@Html.DisplayNameFor(model => model.PublicCompanyGrowthRate)</th>
-                <th>@Html.DisplayNameFor(model => model.PublicCompanyFaceValue)</th>
-                <th>@Html.DisplayNameFor(model => model.PublicCompanyMarketValue)</th>
-                <th>@Html.DisplayNameFor(model => model.OtcCompanyCount)</th>
-                <th>@Html.DisplayNameFor(model => model.OtcCompanyCapital)</th>
-                <th>@Html.DisplayNameFor(model => model.OtcCompanyGrowthRate)</th>
-                <th>@Html.DisplayNameFor(model => model.OtcCompanyFaceValue)</th>
-                <th>@Html.DisplayNameFor(model => model.OtcCompanyMarketValue)</th>
-                <th>@Html.DisplayNameFor(model => model.NonPublicCompanyCount)</th>
-                <th>@Html.DisplayNameFor(model => model.NonPublicCompanyCapital)</th>
-                <th>功能</th>
-            </tr>
-        </thead>
-        <tbody>
-    @foreach (var item in Model) {
-            <tr>
-                <td>@Html.DisplayFor(modelItem => item.Month)</td>
-                <td>@Html.DisplayFor(modelItem => item.PublicCompanyCount)</td>
-                <td>@Html.DisplayFor(modelItem => item.PublicCompanyCapital)</td>
-                <td>@Html.DisplayFor(modelItem => item.PublicCompanyGrowthRate)</td>
-                <td>@Html.DisplayFor(modelItem => item.PublicCompanyFaceValue)</td>
-                <td>@Html.DisplayFor(modelItem => item.PublicCompanyMarketValue)</td>
-                <td>@Html.DisplayFor(modelItem => item.OtcCompanyCount)</td>
-                <td>@Html.DisplayFor(modelItem => item.OtcCompanyCapital)</td>
-                <td>@Html.DisplayFor(modelItem => item.OtcCompanyGrowthRate)</td>
-                <td>@Html.DisplayFor(modelItem => item.OtcCompanyFaceValue)</td>
-                <td>@Html.DisplayFor(modelItem => item.OtcCompanyMarketValue)</td>
-                <td>@Html.DisplayFor(modelItem => item.NonPublicCompanyCount)</td>
-                <td>@Html.DisplayFor(modelItem => item.NonPublicCompanyCapital)</td>
-                <td>
-                    <div class="btn-group" role="group">
-                        <a asp-action="Edit" asp-route-id="@item.Month" class="btn btn-sm btn-warning">編輯</a>
-                        <a asp-action="Delete" asp-route-id="@item.Month" class="btn btn-sm btn-danger">刪除</a>
-                    </div>
-                </td>
-            </tr>
-    }
-        </tbody>
-    </table>
-</div>
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842

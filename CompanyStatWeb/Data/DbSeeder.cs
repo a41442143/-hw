@@ -7,6 +7,7 @@ public static class DbSeeder
 {
     public static async Task SeedRolesAndAdminAsync(IServiceProvider serviceProvider)
     {
+        // Use Scoped context directly, do NOT dispose it here as it is injected
         var context = serviceProvider.GetRequiredService<ApplicationDbContext>();
         await context.Database.EnsureCreatedAsync();
 
@@ -38,8 +39,6 @@ public static class DbSeeder
                 EmailConfirmed = true
             };
             
-            // Password must match the policy configured in Program.cs
-            // We set it to simple 4 chars, but let's use a slightly better one just in case
             var createPowerUser = await userManager.CreateAsync(newAdmin, "Admin123!"); 
 
             if (createPowerUser.Succeeded)

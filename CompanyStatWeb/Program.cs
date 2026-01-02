@@ -1,18 +1,14 @@
-<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using CompanyStatWeb.Data;
 using CompanyStatWeb.Models;
 
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<CompanyStatWeb.Services.CompanyDataService>();
 
-<<<<<<< HEAD
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -34,8 +30,9 @@ builder.Services.AddAuthorization(options =>
         .Build();
 });
 
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
+// Fix: Remove explicit HttpsRedirection port enforcement to allow HTTP running
+// builder.Services.AddHttpsRedirection(options => { options.HttpsPort = 7002; });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -46,29 +43,26 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-<<<<<<< HEAD
+// app.UseHttpsRedirection(); // Disable forced redirect to avoid localhost port issues
+
+// IMPORTANT: UseStaticFiles must be before UseRouting for unauthorized access to assets
 app.UseStaticFiles();
+
 app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
+// MapStaticAssets with AllowAnonymous if using the new feature, but UseStaticFiles handles most.
+// Just in case:
 app.MapStaticAssets().AllowAnonymous();
-=======
-app.UseHttpsRedirection();
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapStaticAssets();
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
-<<<<<<< HEAD
+// DB Seeding Scope
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -82,7 +76,5 @@ using (var scope = app.Services.CreateScope())
         logger.LogError(ex, "An error occurred while seeding the database.");
     }
 }
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
 
 app.Run();

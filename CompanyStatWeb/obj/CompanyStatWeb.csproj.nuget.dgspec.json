@@ -49,7 +49,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-<<<<<<< HEAD
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -66,8 +65,6 @@
               "version": "[9.0.0, )"
             }
           },
-=======
->>>>>>> cb82a04413b015b0a0f4070096f30687d4008842
           "imports": [
             "net461",
             "net462",
